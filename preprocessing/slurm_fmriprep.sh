@@ -9,10 +9,10 @@
 #SBATCH --partition=all
 
 # How long is job?
-SBATCH -t 18:00:00
+#SBATCH -t 5:00:00
 
 # Set array to be your subject number
-#SBATCH --array=001, 002, 003
+#SBATCH --array=001
 
 # Where to output log files? The log file will be in the format of the job ID_array number
 # make sure this logs directory exists!! otherwise the script won't run
@@ -22,7 +22,7 @@ SBATCH -t 18:00:00
 #SBATCH --cpus-per-task=8 --mem-per-cpu=20000
 
 # Update with your email 
-SBATCH --mail-user=sckimmel@princeton.edu
+#SBATCH --mail-user=sckimmel@princeton.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 
 # Remove modules because Singularity shouldn't need them
