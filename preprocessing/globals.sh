@@ -12,7 +12,7 @@ scanner_dir=/jukebox/dicom/conquest/Prisma-MSTZ400D/GraziL/2023  #Sample project
 project_dir=/jukebox/graziano/sarah/judge_attention/sample_study
 
 # 3. Edit where your scratch and work directories are located (note: make sure you have setup a work directory on scratch)
-scratch_dir=/jukebox/scratch/USERNAME/work/YOURSTUDY
+scratch_dir=/jukebox/scratch/sarahk/work/judge_attention
 # scratch_dir=/jukebox/YOURLAB/USERNAME/YOURSTUDY/data/work
 
 data_dir=$project_dir/data
