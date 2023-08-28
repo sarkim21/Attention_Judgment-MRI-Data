@@ -13,10 +13,10 @@ singularity run --cleanenv \
     --participant-label sub-$1 \
     --fs-license-file /project/code/preprocessing/license.txt \
     --no-submm-recon \
-    --bold2t1w-dof 6 \
+    --use-syn-sdc  --bold2t1w-dof 6 \
     --nthreads 8 --omp-nthreads 8 \
     --output-spaces T1w fsaverage:den-41k \
-                    MNI152NLin2009cAsym:res-native \
+                    MNI152NLin2009cAsym:res-native MNI152NLin2009cAsym:res-2 \
     --write-graph --work-dir /scratch \
     /project/data/bids /project/data/bids/derivatives participant
 
@@ -30,7 +30,7 @@ singularity run --cleanenv \
  # --longitudinal \
 
  # To ignore fieldmaps:
- # --ignore fieldmaps
+ # --ignore fieldmaps \
 
  # To use fieldmap-less distortion correction:
- # --use-syn-sdc
+ # --use-syn-sdc \
