@@ -20,10 +20,10 @@ find $bids_dir/sub-$subj -name "*dup*" -delete
  # MAKE SURE YOU MODIFY THE FILENAMES TO MATCH YOUR STUDY'S FILENAMES 
 
  # change _magnitude to _epi in filename for fieldmap niftis and jsons:
- # mv $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-AP_magnitude.json $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-AP_epi.json
- # mv $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-AP_magnitude.nii.gz $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-AP_epi.nii.gz
- # mv $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-PA_magnitude.json $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-PA_epi.json
- # mv $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-PA_magnitude.nii.gz $bids_dir/sub-$subj/ses-01/fmap/sub-${subj}_ses-01_dir-PA_epi.nii.gz
+ # mv $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-AP_magnitude.json $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-AP_epi.json
+ # mv $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-AP_magnitude.nii.gz $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-AP_epi.nii.gz
+ # mv $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-PA_magnitude.json $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-PA_epi.json
+ # mv $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-PA_magnitude.nii.gz $bids_dir/sub-$subj/ses-1/fmap/sub-${subj}_ses-1_dir-PA_epi.nii.gz
 
  # If you want fmriprep to use your fieldmaps for susceptibility distortion correction, 
  #you need to tell fmriprep which fieldmaps to use to correct each functional run. 

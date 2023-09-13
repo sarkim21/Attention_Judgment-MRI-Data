@@ -6,7 +6,7 @@
 #SBATCH --job-name=mriqc
 
 # Set array to be your subject number(s)
-#SBATCH --array=001
+#SBATCH --array=002
 
 # Where to output log files?
 # make sure this logs directory exists!! otherwise the script won't run
@@ -14,6 +14,7 @@
 
 # Set partition
 #SBATCH --partition=all
+
 
 # How long is job?
 #SBATCH -t 3:00:00
@@ -45,9 +46,9 @@ echo "Finished running MRIQC on sub-$subj"
 date
 
 # GROUP LEVEL
-echo "Running MRIQC on group"
+#echo "Running MRIQC on group"
 
-./run_mriqc_group.sh
+#./run_mriqc_group.sh
 
-echo "Finished running MRIQC on group"
-date
+#echo "Finished running MRIQC on group"
+#date

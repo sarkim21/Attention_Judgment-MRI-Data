@@ -7,13 +7,16 @@
 #scanner_dir=/jukebox/dicom/conquest/Skyra-AWP45031/NormaL/2020 #Skyra
 #scanner_dir=/jukebox/dicom/conquest/Prisma-MSTZ400D/NormaL/2020 #Prisma
 scanner_dir=/jukebox/dicom/conquest/Prisma-MSTZ400D/GraziL/2023  #Sample project data
+#scanner_dir=/mnt/cup/PNI_facilities/fMRI/dicom/conquest/Prisma-MSTZ400D/GraziL/2023
 
 # 2. Edit where your project directory is
 project_dir=/jukebox/graziano/sarah/judge_attention/sample_study
+# project_dir=/mnt/cup/labs/graziano/sarah/judge_attention/sample_study
 
 # 3. Edit where your scratch and work directories are located (note: make sure you have setup a work directory on scratch)
 scratch_dir=/jukebox/scratch/sarahk/work/judge_attention
 # scratch_dir=/jukebox/YOURLAB/USERNAME/YOURSTUDY/data/work
+# scratch_dir=/mnt/cup/labs/graziano/sarah/scratch
 
 data_dir=$project_dir/data
 bids_dir=$data_dir/bids
